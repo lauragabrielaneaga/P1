@@ -1,0 +1,206 @@
+
+**** 12/17/21 10:39:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Protectia_termica"  [ C:\Users\laura\Desktop\UTILMUL PROIECT P1\P1_Neaga_Laura-Gabriela_433C-PSpiceFiles\SCH
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Protectia_termica.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\laura\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\1N4148"
++ ".lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BZX84C"
++ "5V1.lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\MJD31C"
++ "G.lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BC817-"
++ "25.lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BC807-"
++ "25.lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BZX84C"
++ "2V7.lib" 
+.lib "nomd.lib" 
+.stmlib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BZX"
++ "84C5V1.lib" 
+
+*Analysis directives: 
+.DC LIN TEMP 0 110 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P1_NEAGA_LAURA-GABRIELA_433C
+Q_Q5         N63009 N63887 0 QBC817-25 
+R_R33         N63817 N63957 330
+R_R29         N63197 N63417 330
+R_R30         N62793 N63197 330
+R_R7         N63553 N63823 1k
+Q_Q3         N63887 N63823 N63473 QBC807-25 
+R_R19         N62793 N62865 1
+X_D1         N64221 0 LED PARAMS: IS=3.9573e-019 RS=2  BV=5 IBV=10e-6         
+Q_Q10         N62877 N63009 VOUT QMJD31C 
+C_C1         0 N63823  4.7u  TC=0,0 
+R_R23         VOUT N63559 15k
+R_R5         N62793 N63179 330
+R_R9         N642351 0 150
+R_RL         VOUT 0 800
+Q_Q6         N63009 N63411 0 QBC817-25 
+R_R3         N63671 N63929 1.5k
+R_R17         N64265 0 68
+R_R11         N62793 N629671 680
+R_R13         N63287 N633991 680
+R_R16         N63411 N64265 910
+Q_Q4         0 N63841 N63473 QBC807-25 
+X_D4         N63811 0 LED PARAMS: IS=3.9573e-019 RS=2  BV=5 IBV=10e-6         
+R_R10         N62793 N63185 1k
+R_R28         N63479 N63811 330
+R_R32         N63527 N63817 330
+D_D2         N63175 N62793 BZX84-C2V7 
+R_R4         N63929 0 1.5k
+Q_Q7         N63411 N63175 N63203 QBC807-25 
+Q_Q9         N63333 N62877 N62793 QBC807-25 
+R_R14         N633991 N63009 680
+R_R34         N63957 N64221 330
+R_R12         N629671 N63287 680
+X_R24         N63897 N63841 N63559 POT PARAMS: SET=1 VALUE=5k
+C_C2         0 VOUT  4.7u  TC=0,0 
+R_R6         N63359 N63553 1k
+R_R15         N62793 N63203 3.9k
+R_R18         N63333 0 4.7k
+D_D3         0 N63823 BZX84-C2V7 
+R_R20         N62865 N62877 1
+R_R25         N63897 0 3.9k
+R_R31         N63417 N63527 330
+R_R21         N62865 N62877 1
+Q_Q8         N63009 N63333 0 QBC817-25 
+Q_Q1         N63359 N63175 N63179 QBC807-25 
+Q_Q2         N63473 N63175 N63185 QBC807-25 
+R_R22         N62865 N62877 1
+R_R27         N63191 N63479 330
+V_V1         N62793 0 32
+R_R8         N63887 N642351 470
+R_R26         VOUT N63191 330
+R_R2         N63175 N63671 1.5k
+
+**** RESUMING Protectia_termica.cir ****
+.END
+
+**** 12/17/21 10:39:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Protectia_termica"  [ C:\Users\laura\Desktop\UTILMUL PROIECT P1\P1_Neaga_Laura-Gabriela_433C-PSpiceFiles\SCH
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BZX84-C2V7      X_D1.model201   X_D4.model201   
+          IS  110.880000E-18  395.730000E-21  395.730000E-21 
+           N     .92657         2               2            
+         ISR    1.515900E-06                                 
+         IKF  147.68                                         
+          BV    2.7639          5               5            
+         IBV     .06977        10.000000E-06   10.000000E-06 
+          RS     .85899         2               2            
+          TT   17.889000E-09                                 
+         CJO  344.690000E-12                                 
+          VJ     .72935                                      
+           M     .31964                                      
+
+
+**** 12/17/21 10:39:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Protectia_termica"  [ C:\Users\laura\Desktop\UTILMUL PROIECT P1\P1_Neaga_Laura-Gabriela_433C-PSpiceFiles\SCH
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QMJD31C         QBC817-25       QBC807-25       
+               NPN             NPN             PNP             
+       LEVEL    1               1               1            
+          IS   90.620200E-12   91.980000E-15  108.000000E-15 
+          EG    1.05                                         
+          BF    3.418700E+03  338.8           385.7          
+          NF    1.17603         1.003            .99         
+         VAF   29.2393        107.9            31.29         
+         IKF     .108267         .4913           .3603       
+         ISE  537.193000E-09  446.800000E-18   27.130000E-15 
+          NE    4               1.65            1.4          
+          BR  367.353          29.48           20.57         
+          NR    5               1.002            .9849       
+         VAR    1.631          25              11.62         
+         IKR    1.15207          .193            .054        
+         ISC    1.157540E-09    5.109000E-15  506.200000E-15 
+          NC    1.49179         1.071           1.295        
+         ISS    0               0               0            
+          RB   22.4853          1               1            
+         RBM    1.000000E-12    1                .5          
+         IRB    2.209370E-03    1.000000E+03    1.000000E-06 
+          RE  100.000000E-06     .2126           .1415       
+          RC     .138633         .143            .2623       
+         CJE  373.889000E-12   38.250000E-12   51.140000E-12 
+         VJE     .67672          .7004           .8911       
+         MJE     .575056         .364            .4417       
+         CJC  352.510000E-12   12.700000E-12   26.560000E-12 
+         VJC     .884306         .4431           .62         
+         MJC     .473486         .3983           .4836       
+        XCJC     .1              .4555           .459        
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+         MJS     .5              .333            .333        
+          FC     .8              .905            .99         
+          TF   10.000000E-09  522.900000E-12  735.900000E-12 
+         XTF    3.4926        219.7             1.859        
+         VTF   12.6615          3.502           3.813        
+         ITF     .052395        7.257            .4393       
+          TR    3.298030E-06   70.000000E-12   50.000000E-09 
+         XTB  999.997000E-15                                 
+         XTI    1.000000E-12                                 
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.42            2.2          
+           D     .87             .87             .52         
+
+
+
+          JOB CONCLUDED
+
+**** 12/17/21 10:39:51 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Protectia_termica"  [ C:\Users\laura\Desktop\UTILMUL PROIECT P1\P1_Neaga_Laura-Gabriela_433C-PSpiceFiles\SCH
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .78
+

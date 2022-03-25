@@ -1,0 +1,64 @@
+  Revised: Friday, December 17, 2021
+          Revision: 
+
+
+
+
+
+
+
+Bill Of Materials       December 17,2021      10:56:56	Page1
+
+Item	Quantity	Reference	Part
+______________________________________________
+
+1	2	C1	4.7u
+		C2	4.7u
+2	2	D1	2V LED
+		D4	2V LED
+3	2	D2	BZX84-C2V7
+		D3	BZX84-C2V7
+4	6	Q1	QBC807-25
+		Q2	QBC807-25
+		Q3	QBC807-25
+		Q4	QBC807-25
+		Q7	QBC807-25
+		Q9	QBC807-25
+5	3	Q5	QBC817-25
+		Q6	QBC817-25
+		Q8	QBC817-25
+6	1	Q10	QMJD31C
+7	1	RL	800
+8	3	R2	1.5k
+		R3	1.5k
+		R4	1.5k
+9	10	R5	330
+		R26	330
+		R27	330
+		R28	330
+		R29	330
+		R30	330
+		R31	330
+		R32	330
+		R33	330
+		R34	330
+10	3	R6	1k
+		R7	1k
+		R10	1k
+11	1	R8	470
+12	1	R9	150
+13	4	R11	680
+		R12	680
+		R13	680
+		R14	680
+14	2	R15	3.9k
+		R25	3.9k
+15	1	R16	910
+16	1	R17	68
+17	1	R18	4.7k
+18	4	R19	1
+		R20	1
+		R21	1
+		R22	1
+19	1	R23	15k
+20	1	R24	5k

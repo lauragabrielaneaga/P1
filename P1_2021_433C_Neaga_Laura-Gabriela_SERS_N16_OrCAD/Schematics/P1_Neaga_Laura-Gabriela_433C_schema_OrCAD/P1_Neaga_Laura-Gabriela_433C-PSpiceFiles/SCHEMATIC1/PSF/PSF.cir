@@ -1,0 +1,32 @@
+** Profile: "SCHEMATIC1-PSF"  [ C:\Users\laura\Desktop\UTILMUL PROIECT P1\P1_Neaga_Laura-Gabriela_433C-PSpiceFiles\SCHEMATIC1\PSF.sim ] 
+
+** Creating circuit file "PSF.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\laura\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\1N4148"
++ ".lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BZX84C"
++ "5V1.lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\MJD31C"
++ "G.lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BC817-"
++ "25.lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BC807-"
++ "25.lib" 
+.lib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BZX84C"
++ "2V7.lib" 
+.lib "nomd.lib" 
+.stmlib "C:\Users\laura\Desktop\ANUL 3 - TST\Proiect 1 - Stabilizator liniar de tensiune\Lib_ModelePSpice_Anexa_1\Modele_A1_lib\BZX"
++ "84C5V1.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
